@@ -144,6 +144,8 @@ fun main(args: Array<String>) {
     // fecha.time = 11231231
     // fecha.year = 2000
     // fecha = Date(1989,6,10)
+
+    val numerito = Numero(1)
 }
 
 fun holaMundo(mensaje: String): Unit {
@@ -176,4 +178,119 @@ fun estaJalado(nota: Double): Double {
         }
     }
     return nota
+}
+
+
+//Clase 25-04-2019
+class Usuario(val cedula:String) {
+    public var nombre:String = ""
+    public var apellido:String = ""
+
+    constructor(cedulaM:String,
+                apellido:String) : this(cedulaM) {
+        this.apellido = apellido
+    }
+}
+
+// public and unit -> son por defecto en Kotlin
+class UsuarioKT(public var nombre:String,
+                public var apellido: String,
+                private var id:Int,
+                protected var id2:Int) {
+
+    init {
+
+    }
+
+    private fun hola2() {}
+    protected fun hola3() {}
+
+    public fun hola():String {
+        return  this.apellido
+    }
+
+    companion object {
+        val gravedad = 10.5
+        fun correr() {
+            println("Estoy corriendo en $gravedad")
+        }
+    }
+}
+// -> init, se ejecuta despues del primer constructor
+
+class BaseDeDatos {
+    companion object {
+        private val usuarios = arrayListOf(1,2,3)
+        fun agregarUsuario(usuario:Int) {
+            this.usuarios.add(usuario)
+        }
+        fun eliminarUsuario(usuario: Int) {
+            this.usuarios.remove(usuario)
+        }
+    }
+}
+
+fun aa() {
+    UsuarioKT.gravedad
+    UsuarioKT.correr()
+}
+
+fun a() {
+    //val kevin = UsuarioKT("q","b")
+    //kevin.apellido
+    //kevin.nombre
+    //kevin.nombre = "fernando"
+}
+
+class  A {}
+//A.correr()  -> Metodo estatico
+//A.gravedad  -> Propiedad estatica
+
+//Companion object -> metodos y propiedades
+
+//Sobre cargar de constructores ->
+// recibir distintos numeros de parametros
+class Numero(var numero:Int) {
+    constructor(numeroString:String):this(numeroString.toInt()){
+        println("CONSTRUCTOR")
+    }
+    init {
+        println("INIT")
+    }
+}
+
+//open y final -> heredar clases, clases abstractas
+
+//open class Numeros(var numeroUno:Int,
+abstract class Numeros(var numeroUno:Int,
+             var numeroDos:Int
+)
+class Suma(numeroUnos: Int,
+           numeroDoss: Int) :
+        Numeros(numeroUnos,numeroDoss) {
+}
+fun cc() {
+    val a = Suma(1,2)
+    //val a2 = Numeros(1,2) -> clase abstracta
+}
+
+
+// ? -> a veces va hacer nulo
+// KT -> ayuda a no tener los errroes de nullpointerexception
+
+fun presley(requerido:Int,
+            opcional:Int = 1,
+            nulo:UsuarioKT?) {
+    if(nulo != null) {
+        nulo.nombre
+    }
+    val nombresito:String? = nulo?.nombre.toString()
+
+    nulo!!.nombre //-> dice al compilador que la variable existe
+}
+
+fun cddd() {
+    presley(requerido = 1, nulo = null)    // Named Parameters
+    presley(1,1,null)    // Named Parameters
+    presley(1,1,null)    // Named Parameters
 }
