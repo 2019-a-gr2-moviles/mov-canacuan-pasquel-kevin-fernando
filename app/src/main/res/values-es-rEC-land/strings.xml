@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APP</string>
+    <string name="hola_mundo">Hola Mundo!</string>
+    <color name="colorHolaMundo">#F44336</color>
+</resources>
