@@ -1,4 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">TEODIOMUCHSIMO</string>
+    <string name="action_settings">Settings</string>
+    <color name="colorHolaMundo">#2196F3</color>
 </resources>
