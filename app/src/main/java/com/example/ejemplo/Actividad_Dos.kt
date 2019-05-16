@@ -6,24 +6,23 @@ import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_actividad__dos.*
 import kotlinx.android.synthetic.main.activity_main.*
 
-class MainActivity : AppCompatActivity() {
+class Actividad_Dos : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_actividad__dos)
 
-        btn_actividad_dos.setOnClickListener {
-            irActividadDos()
+        btn_actividad_uno.setOnClickListener {
+            irMainActivity()
         }
     }
 
-    fun irActividadDos() {
+    fun irMainActivity() {
         val intent = Intent(
             this,
-            Actividad_Dos::class.java
+            MainActivity::class.java
         )
         startActivity(intent)
     }
+
 }
-
-
