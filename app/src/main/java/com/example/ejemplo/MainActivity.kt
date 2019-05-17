@@ -22,8 +22,15 @@ class MainActivity : AppCompatActivity() {
             this,
             Actividad_Dos::class.java
         )
+
+        intent.putExtra("nombre", "Kevin")
+        intent.putExtra("edad", 24)
+
+
+
         startActivity(intent)
     }
+
 }
 
 
