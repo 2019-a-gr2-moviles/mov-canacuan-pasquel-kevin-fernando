@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Examen IB</string>
-    <string name="btnEntrar">ENTRAR</string>
-    <string name="txtNombre">Ingrese Nombre</string>
+    <string name="app_name">IB Exam</string>
+    <string name="btnEntrar">ENTER</string>
+    <string name="txtNombre">Inserisci nome</string>
 
-    <string name="btnEquipo">Equipo</string>
+    <string name="btnEquipo">Team</string>
     <string name="btnCrearEquipo">Crear Equipo</string>
 
     <string name="nombreEquipo">Nombres de Equipos</string>
@@ -37,7 +38,5 @@
 
     <string name="btnActualizarJugador">Actualizar Jugador</string>
     <string name="btnEliminarJugador">Eliminar Jugador</string>
-
-
 
 </resources>
