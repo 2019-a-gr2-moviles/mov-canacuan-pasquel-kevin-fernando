@@ -1,4 +1,5 @@
 <resources>
+    
     <string name="app_name">Examen IB</string>
     <string name="btnEntrar">ENTRAR</string>
     <string name="txtNombre">Ingrese Nombre</string>
@@ -34,7 +35,7 @@
     <string name="btnGuardar">Guardar</string>
 
 
-    <string name="nombreJugador">Nombres de Materios</string>
+    <string name="nombreJugador">Nombres de Materias</string>
 
     <string name="btnActualizarJugador">Actualizar Materia</string>
     <string name="btnEliminarJugador">Eliminar Materia</string>
