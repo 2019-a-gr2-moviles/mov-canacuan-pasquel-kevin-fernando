@@ -3,40 +3,41 @@
     <string name="btnEntrar">ENTRAR</string>
     <string name="txtNombre">Ingrese Nombre</string>
 
-    <string name="btnEquipo">Equipo</string>
-    <string name="btnCrearEquipo">Crear Equipo</string>
+    <string name="btnEquipo">Estudiante</string>
+    <string name="btnCrearEquipo">Crear Estudiante</string>
 
-    <string name="nombreEquipo">Nombres de Equipos</string>
+    <string name="nombreEquipo">Nombres de Estudiantes</string>
 
-    <string name="txtNombreLiga">Liga</string>
+    <string name="txtNombreLiga">Nombres</string>
+    <string name="txtNombreEqueip">Apellidos</string>
+    <string name="txtNumeroCopas">Semestre Actual</string>
+    <string name="txtNombreFechaCreacio">Fecha Nacimiento</string>
+    <string name="chkCampeonActual">Graduado</string>
+    <string name="msg">Ingreso exitoso</string>
     <string name="btnAceptar">Aceptar</string>
     <string name="btnCancelar">Cancelar</string>
-    <string name="txtNombreEqueip">Nombre</string>
-    <string name="txtNumeroCopas">Copas Int</string>
-    <string name="chkCampeonActual">Campeon Actual</string>
-    <string name="txtNombreFechaCreacio">Fecha Creacion</string>
-    <string name="msg">Ingreso exitoso</string>
 
     <string name="btnEliminar">Eliminar</string>
     <string name="btnActualizar">Actualizar</string>
-    <string name="btnCrearJug">Crear Jugador</string>
-    <string name="btnGestionarJug">Gestionar Jugador</string>
+    <string name="btnCrearJug">Crear Materia</string>
+    <string name="btnGestionarJug">Gestionar Materia</string>
     <string name="btnMenu">Menu</string>
     <string name="msgEliminar">Eliminado exitosamente</string>
     <string name="msgActualizar">Actualizado exitosamente</string>
 
-    <string name="txtNumeroCamiseta">Numero Camiseta</string>
-    <string name="txtNombreCamiseta">Nombre Camiseta</string>
-    <string name="txtNombreJugador">Nombre Jugador</string>
-    <string name="txtPoderEspecial">Poder Especial</string>
-    <string name="txtGoles">Goles</string>
+    <string name="txtNumeroCamiseta">Nombre</string>
+    <string name="txtNombreCamiseta">Codigo</string>
+    <string name="txtNombreJugador">Descripcion</string>
+    <string name="txtPoderEspecial">Activo</string>
+    <string name="txtGoles"># Horas</string>
+    <string name="txtFenchaIngreso">Fecha Creacion</string>
     <string name="btnGuardar">Guardar</string>
-    <string name="txtFenchaIngreso">Fecha Ingreso</string>
 
-    <string name="nombreJugador">Nombres de Jugadores</string>
 
-    <string name="btnActualizarJugador">Actualizar Jugador</string>
-    <string name="btnEliminarJugador">Eliminar Jugador</string>
+    <string name="nombreJugador">Nombres de Materios</string>
+
+    <string name="btnActualizarJugador">Actualizar Materia</string>
+    <string name="btnEliminarJugador">Eliminar Materia</string>
 
 
 
