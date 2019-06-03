@@ -1,42 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">IB Exam</string>
+    <string name="app_name">Examen IB</string>
     <string name="btnEntrar">ENTER</string>
     <string name="txtNombre">Inserisci nome</string>
 
-    <string name="btnEquipo">Team</string>
-    <string name="btnCrearEquipo">Crear Equipo</string>
+    <string name="btnEquipo">Studente </string>
+    <string name="btnCrearEquipo">Crea studente</string>
 
-    <string name="nombreEquipo">Nombres de Equipos</string>
+    <string name="nombreEquipo">Nomi degli studenti</string>
 
-    <string name="txtNombreLiga">Liga</string>
-    <string name="btnAceptar">Aceptar</string>
-    <string name="btnCancelar">Cancelar</string>
-    <string name="txtNombreEqueip">Nombre</string>
-    <string name="txtNumeroCopas">Copas Int</string>
-    <string name="chkCampeonActual">Campeon Actual</string>
-    <string name="txtNombreFechaCreacio">Fecha Creacion</string>
-    <string name="msg">Ingreso exitoso</string>
+    <string name="txtNombreLiga">Nomi </string>
+    <string name="txtNombreEqueip">LastName </string>
+    <string name="txtNumeroCopas">Semestre Actual</string>
+    <string name="txtNombreFechaCreacio">Data di nascita</string>
+    <string name="chkCampeonActual">Graduato </string>
+    <string name="msg">Login riuscito </string>
+    <string name="btnAceptar">Accetta </string>
+    <string name="btnCancelar">Annulla </string>
 
-    <string name="btnEliminar">Eliminar</string>
-    <string name="btnActualizar">Actualizar</string>
-    <string name="btnCrearJug">Crear Jugador</string>
-    <string name="btnGestionarJug">Gestionar Jugador</string>
+    <string name="btnEliminar">Rimuovi </string>
+    <string name="btnActualizar">Update</string>
+    <string name="btnCrearJug">Crea oggetto</string>
+    <string name="btnGestionarJug">Manage Matter</string>
     <string name="btnMenu">Menu</string>
-    <string name="msgEliminar">Eliminado exitosamente</string>
-    <string name="msgActualizar">Actualizado exitosamente</string>
+    <string name="msgEliminar">Rimosso con successo</string>
+    <string name="msgActualizar">Aggiornato con successo</string>
 
-    <string name="txtNumeroCamiseta">Numero Camiseta</string>
-    <string name="txtNombreCamiseta">Nombre Camiseta</string>
-    <string name="txtNombreJugador">Nombre Jugador</string>
-    <string name="txtPoderEspecial">Poder Especial</string>
-    <string name="txtGoles">Goles</string>
-    <string name="btnGuardar">Guardar</string>
-    <string name="txtFenchaIngreso">Fecha Ingreso</string>
+    <string name="txtNumeroCamiseta">Nome </string>
+    <string name="txtNombreCamiseta">Codice</string>
+    <string name="txtNombreJugador">Descrizione </string>
+    <string name="txtPoderEspecial">Active </string>
+    <string name="txtGoles"># Hours </string>
+    <string name="txtFenchaIngreso">Data di creazione</string>
+    <string name="btnGuardar">Salva </string>
 
-    <string name="nombreJugador">Nombres de Jugadores</string>
 
-    <string name="btnActualizarJugador">Actualizar Jugador</string>
-    <string name="btnEliminarJugador">Eliminar Jugador</string>
+    <string name="nombreJugador"> Nome oggetto</string>
 
+    <string name="btnActualizarJugador">Aggiorna argomento</string>
+    <string name="btnEliminarJugador">Elimina argomento</string>
 </resources>
