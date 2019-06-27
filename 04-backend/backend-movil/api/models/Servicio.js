@@ -10,15 +10,13 @@ module.exports = {
   attributes: {
 
     nombre: {
-      type: 'string'
+      type:'string'
     },
-
-    // CONFIGURACION DEL HIJO - RELACION
-    fkUsuario: {           // nombre del FK para la relacion
-      model: 'usuario'     // nombre del modelo a relacionar (papá)
-      // required: true     opcionar -> validacion
+    //  CONFIGURACION DEL HIJO
+    fkUsuario: {  // Nombre del FK para la relacion
+      model: 'usuario', // Nombre del modelo a relacionar (papa)
+      // required: true // OPCIONAL -> Siempre ingresar el FK
     }
-
   },
 
 };

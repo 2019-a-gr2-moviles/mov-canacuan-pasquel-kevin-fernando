@@ -15,6 +15,10 @@ class MainActivity : AppCompatActivity() {
         btn_actividad_dos.setOnClickListener {
             irActividadDos()
         }
+
+        btn_actividadhttp.setOnClickListener {
+            irActividadHttp()
+        }
     }
 
     fun irActividadDos() {
@@ -25,10 +29,15 @@ class MainActivity : AppCompatActivity() {
 
         intent.putExtra("nombre", "Kevin")
         intent.putExtra("edad", 24)
-
-
-
         startActivity(intent)
+    }
+
+    fun irActividadHttp() {
+        val intentExplicito = Intent (
+            this,
+            ConexionHttpActivity::class.java
+        )
+        startActivity(intentExplicito)
     }
 
 }

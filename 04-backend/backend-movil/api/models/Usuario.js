@@ -9,7 +9,7 @@ module.exports = {
 
   attributes: {
     nombreAtributo: {
-      type: 'string'
+      type:'string'
     },
     nombre: {
       type: 'string',
@@ -27,6 +27,7 @@ module.exports = {
     username: {
       type: 'string',
       required: true,
+      unique: true
     },
     fechaNacimiento: {
       type: 'string'
@@ -55,22 +56,18 @@ module.exports = {
       type: 'string',
       isEmail: true
     },
-
-
-    // CONFIGURACION DEL PAPA - RELACION
-    serviciosDeUsuario: {       // nombre atributo de la relacion
-      collection: 'servicio',   // nombre del modelo a relacionar
-      via: 'fkUsuario'          // nombre atributo FK del otro modelo
-
+    //  CONFIGURACION DEL HIJO
+    fkEmpresa: {  // Nombre del FK para la relacion
+      model: 'empresa', // Nombre del modelo a relacionar (papa)
+      // required: true // OPCIONAL -> Siempre ingresar el FK
     },
-
-    // CONFIGURACION DEL HIJO - RELACION
-    fkEmpresa: {           // nombre del FK para la relacion
-      model: 'empresa'     // nombre del modelo a relacionar (papá)
-      // required: true     opcionar -> validacion
+    // CONFIGURACION DEL PAPA
+    serviciosDeUsuario: { // Nombre atributo de la relacion
+      collection: 'servicio', // Nombre del modelo a relacionar
+      via: 'fkUsuario'  // Nombre atributo FK del otro modelo
     }
-
   },
+  // 
 
 };
 
