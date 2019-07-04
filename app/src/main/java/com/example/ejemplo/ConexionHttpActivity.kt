@@ -9,6 +9,7 @@ import java.util.*
 import com.github.kittinunf.result.Result.Failure
 import com.github.kittinunf.result.Result.Success
 import com.github.kittinunf.fuel.httpGet
+import com.github.kittinunf.fuel.httpPost
 
 class ConexionHttpActivity : AppCompatActivity() {
 
@@ -74,7 +75,7 @@ class ConexionHttpActivity : AppCompatActivity() {
                 "Error instanciando la empresa")
         }
 
-        val url = "https://172.31.104.111:1337/empresa/1"
+        val url = "https://172.31.104.105:1337/empresa/1"
 
         url.
             httpGet().
@@ -97,6 +98,32 @@ class ConexionHttpActivity : AppCompatActivity() {
                 }
             }
 
+        //Clase 04-07-2019
+
+        val urlCrearEmpresa = "http://172.31.104.105:1337/empresa"
+
+        val parametrosCrearEmpresa = listOf(
+            "nombre" to "Manticore LABS 2",
+            "apellido" to "Canacuan",
+            "sueldo" to 12.25,
+            "casado" to false,
+            "hijos" to null
+        )
+
+        urlCrearEmpresa
+            .httpPost(parametrosCrearEmpresa)
+            .responseString { request, response, result ->
+                when(result) {
+                    is Failure -> {
+                        val error = result.getException()
+                        Log.i("http", "Error:: ${error}")
+                    }
+                    is Success -> {
+                        val empresaString = result.get();
+                        Log.i("http", "${empresaString}")
+                    }
+                }
+            }
 
     }
 
