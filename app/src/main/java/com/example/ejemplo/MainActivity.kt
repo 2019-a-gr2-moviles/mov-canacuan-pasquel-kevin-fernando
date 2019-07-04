@@ -19,6 +19,18 @@ class MainActivity : AppCompatActivity() {
         btn_actividadhttp.setOnClickListener {
             irActividadHttp()
         }
+
+        btn_mapa.setOnClickListener {
+            irActividadMapa()
+        }
+    }
+
+    fun irActividadMapa() {
+        val intentExplicito = Intent (
+            this,
+            MapsActivity::class.java
+        )
+        startActivity(intentExplicito)
     }
 
     fun irActividadDos() {
