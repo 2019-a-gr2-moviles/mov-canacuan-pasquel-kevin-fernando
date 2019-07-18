@@ -36,5 +36,17 @@
             android:layout_height="wrap_content" tools:layout_editor_absoluteY="473dp"
             android:id="@+id/btn_mapa" app:layout_constraintStart_toStartOf="@+id/btn_actividadhttp"
             app:layout_constraintEnd_toEndOf="@+id/btn_actividadhttp" app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="C. VIDA"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="549dp"
+            android:id="@+id/btn_ciclo_vida" app:layout_constraintEnd_toEndOf="@+id/btn_mapa"
+            app:layout_constraintStart_toStartOf="@+id/btn_mapa" app:layout_constraintHorizontal_bias="0.0"/>
+    <Button
+            android:text="FRAGMENTOS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="629dp"
+            android:id="@+id/btn_fragmentos" app:layout_constraintEnd_toEndOf="@+id/btn_ciclo_vida"
+            app:layout_constraintStart_toStartOf="@+id/btn_ciclo_vida"/>
 
 </android.support.constraint.ConstraintLayout>

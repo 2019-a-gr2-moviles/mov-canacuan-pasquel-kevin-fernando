@@ -23,6 +23,30 @@ class MainActivity : AppCompatActivity() {
         btn_mapa.setOnClickListener {
             irActividadMapa()
         }
+
+        btn_ciclo_vida.setOnClickListener {
+            irActividadCicloVida()
+        }
+
+        btn_fragmentos.setOnClickListener {
+            irActividadFragmentos()
+        }
+    }
+
+    fun irActividadFragmentos() {
+        val intentExplicito = Intent (
+            this,
+            FragmentosActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
+    fun irActividadCicloVida() {
+        val intentExplicito = Intent (
+            this,
+            CicloVidaActivity::class.java
+        )
+        startActivity(intentExplicito)
     }
 
     fun irActividadMapa() {
